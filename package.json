@@ -1,7 +1,7 @@
 {
-  "name": "tailwind-starter",
-  "version": "1.0.0",
-  "description": "A starter kit to get going with tailwind, gulp and browser-sync.",
+  "name": "menyoo-website",
+  "version": "0.1.0",
+  "description": "Static website",
   "main": "gulpfile.js",
   "paths": {
     "src": {
@@ -27,14 +27,6 @@
     "dev": "gulp serve",
     "build": "gulp css"
   },
-  "keywords": [
-    "tailwind",
-    "utility-first",
-    "CSS",
-    "boilerplate",
-    "gulp",
-    "browser-sync"
-  ],
   "author": "simonswiss",
   "license": "ISC",
   "dependencies": {

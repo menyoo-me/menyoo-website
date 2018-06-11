@@ -1,8 +1,6 @@
 # Menyoo Website
 
-
 ## Sitemap
-
 
 ### Main pages
 
