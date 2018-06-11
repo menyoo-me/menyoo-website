@@ -55,6 +55,22 @@ let colors = {
   "grey-lightest": "#f8fafc",
   white: "#ffffff",
 
+  "brand-blue-darkest": "#271A4F",
+  "brand-blue-darker": "#342369",
+  "brand-blue-dark": "#412B83",
+  "brand-blue": "#472F90",
+  "brand-blue-light": "#57419A",
+  "brand-blue-lighter": "#7967AE",
+  "brand-blue-lightest": "#9A8DC2",
+
+  "brand-orange-darkest": "#8B4C0A",
+  "brand-orange-darker": "#B9650D",
+  "brand-orange-dark": "#E67E10",
+  "brand-orange": "#FD8A11",
+  "brand-orange-light": "#FD9426",
+  "brand-orange-lighter": "#FDA951",
+  "brand-orange-lightest": "#FDBF7D",
+
   "red-darkest": "#3b0d0c",
   "red-darker": "#621b18",
   "red-dark": "#cc1f1a",
