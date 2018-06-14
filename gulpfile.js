@@ -21,17 +21,17 @@ gulp.task("css", () => {
     .pipe(
       postcss([tailwindcss(paths.config.tailwind), require("autoprefixer")])
     )
-    // .pipe(
-    //   purgecss({
-    //     content: [paths.dist.base + "*.html"],
-    //     extractors: [
-    //       {
-    //         extractor: TailwindExtractor,
-    //         extensions: ["html", "js"]
-    //       }
-    //     ]
-    //   })
-    // )
+    .pipe(
+      purgecss({
+        content: [paths.dist.base + "*.html"],
+        extractors: [
+          {
+            extractor: TailwindExtractor,
+            extensions: ["html", "js"]
+          }
+        ]
+      })
+    )
     .pipe(gulp.dest(paths.dist.css));
 });
 
