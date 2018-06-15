@@ -2,6 +2,7 @@
 const paths = require("./package.json").paths;
 
 const gulp = require("gulp");
+const cleanCSS = require('gulp-clean-css');;
 const postcss = require("gulp-postcss");
 const purgecss = require("gulp-purgecss");
 const tailwindcss = require("tailwindcss");
@@ -46,6 +47,13 @@ gulp.task("serve", ["css"], () => {
   gulp.watch(paths.src.css + "*.css", ["css"]);
   gulp.watch(paths.config.tailwind, ["css"]);
   gulp.watch(paths.dist.base + "*.html").on("change", browserSync.reload);
+});
+
+
+gulp.task('minify-css', () => {
+  return gulp.src(paths.dist.css + '*.css')
+    .pipe(cleanCSS({compatibility: 'ie8'}))
+    .pipe(gulp.dest(paths.dist.css));
 });
 
 // default task

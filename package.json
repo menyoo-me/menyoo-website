@@ -30,6 +30,7 @@
   "author": "simonswiss",
   "license": "ISC",
   "dependencies": {
+    "gulp-clean-css": "^3.9.4",
     "gulp-purgecss": "^0.15.0"
   }
 }
