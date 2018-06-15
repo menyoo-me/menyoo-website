@@ -6,6 +6,7 @@
 
 - [/home](https://menyoo.me/home)
 - Sobre o Menyoo [/about-us](https://menyoo.me/about-us)
+- Sobre o Menyoo [/signup](https://menyoo.me/signup)
 - Benefícios [/explore](https://menyoo.me/explore)
 - Planos [/pricing](https://menyoo.me/pricing)
 - Competidores [/competitors](https://menyoo.me/competitors)

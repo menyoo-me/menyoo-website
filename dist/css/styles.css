@@ -29,6 +29,12 @@ body {
 /**
  * Add the correct display in IE 9-.
  */
+
+footer,
+header,
+nav {
+  display: block;
+}
 /**
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
@@ -71,9 +77,15 @@ a {
 /**
  * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
  */
+b {
+  font-weight: inherit;
+}
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
+b {
+  font-weight: bolder;
+}
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
@@ -102,9 +114,15 @@ a {
 /**
  * Remove the border on images inside links in IE 10-.
  */
+img {
+  border-style: none;
+}
 /**
  * Hide the overflow in IE.
  */
+svg:not(:root) {
+  overflow: hidden;
+}
 /* Forms
    ========================================================================== */
 /**
@@ -254,6 +272,7 @@ html {
  */
 
 h1,
+h2,
 p {
   margin: 0;
 }
@@ -289,6 +308,10 @@ p {
 [type="reset"],
 [type="submit"] {
   border-radius: 0;
+}
+
+img {
+  max-width: 100%;
 }
 
 
@@ -337,16 +360,77 @@ p {
   }
 }
 
+.bg-grey-lighter {
+  background-color: #f1f5f8;
+}
+
+.bg-brand-blue {
+  background-color: #472f90;
+}
+
+.bg-brand-blue-light {
+  background-color: #57419a;
+}
+
+.bg-brand-blue-lighter {
+  background-color: #7967ae;
+}
+
+.bg-brand-orange {
+  background-color: #fd8a11;
+}
+
+.hover\:bg-brand-blue:hover {
+  background-color: #472f90;
+}
+
+.hover\:bg-brand-orange-dark:hover {
+  background-color: #e67e10;
+}
+
+.border-grey-light {
+  border-color: #dae1e7;
+}
+
+.rounded {
+  border-radius: .25rem;
+}
+
+.border-t-2 {
+  border-top-width: 2px;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
 .font-sans {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-.font-black {
-  font-weight: 900;
+.font-bold {
+  font-weight: 700;
+}
+
+.h-1 {
+  height: 0.25rem;
+}
+
+.h-6 {
+  height: 1.5rem;
 }
 
 .leading-normal {
   line-height: 1.5;
+}
+
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .mx-auto {
@@ -354,12 +438,46 @@ p {
   margin-right: auto;
 }
 
-.mb-3 {
-  margin-bottom: 0.75rem;
+.ml-2 {
+  margin-left: 0.5rem;
 }
 
-.max-w-md {
-  max-width: 40rem;
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.ml-4 {
+  margin-left: 1rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.max-w-lg {
+  max-width: 50rem;
+}
+
+.max-w-2xl {
+  max-width: 70rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .px-4 {
@@ -367,25 +485,99 @@ p {
   padding-right: 1rem;
 }
 
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
 
-.text-grey-darker {
-  color: #606f7b;
+.pt-4 {
+  padding-top: 1rem;
 }
 
-.text-purple {
-  color: #9561e2;
+.shadow-lg {
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11), 0 5px 15px 0 rgba(0, 0, 0, 0.08);
 }
 
-.hover\:text-red:hover {
-  color: #e3342f;
+.text-center {
+  text-align: center;
 }
 
-.hover\:text-purple-dark:hover {
-  color: #794acf;
+.text-right {
+  text-align: right;
+}
+
+.text-grey-dark {
+  color: #8795a1;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-brand-blue {
+  color: #472f90;
+}
+
+.text-brand-blue-light {
+  color: #57419a;
+}
+
+.text-brand-blue-lighter {
+  color: #7967ae;
+}
+
+.text-sm {
+  font-size: .875rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+}
+
+.text-10xl {
+  font-size: 6rem;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+.w-2\/5 {
+  width: 40%;
+}
+
+.w-3\/5 {
+  width: 60%;
 }
 
 /**
@@ -395,3 +587,102 @@ p {
   * @import "my-utilities/background-images";
   * @import "my-utilities/skew-transforms";
   */
+
+@media (min-width: 576px) {
+
+  .sm\:flex {
+    display: flex;
+  }
+
+  .sm\:items-center {
+    align-items: center;
+  }
+
+  .sm\:justify-between {
+    justify-content: space-between;
+  }
+
+  .sm\:h-8 {
+    height: 2rem;
+  }
+
+  .sm\:mt-0 {
+    margin-top: 0;
+  }
+
+  .sm\:ml-4 {
+    margin-left: 1rem;
+  }
+
+  .sm\:pr-8 {
+    padding-right: 2rem;
+  }
+
+  .sm\:pl-8 {
+    padding-left: 2rem;
+  }
+
+  .sm\:text-center {
+    text-align: center;
+  }
+
+  .sm\:text-right {
+    text-align: right;
+  }
+
+  .sm\:w-1\/2 {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .md\:h-12 {
+    height: 3rem;
+  }
+
+  .md\:mt-16 {
+    margin-top: 4rem;
+  }
+
+  .md\:mb-16 {
+    margin-bottom: 4rem;
+  }
+
+  .md\:-my-8 {
+    margin-top: -2rem;
+    margin-bottom: -2rem;
+  }
+
+  .md\:pr-8 {
+    padding-right: 2rem;
+  }
+
+  .md\:text-left {
+    text-align: left;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+  }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+  }
+
+  .md\:text-20xl {
+    font-size: 12rem;
+  }
+
+  .md\:w-2\/3 {
+    width: 66.66667%;
+  }
+
+  .md\:w-1\/4 {
+    width: 25%;
+  }
+
+  .md\:w-1\/5 {
+    width: 20%;
+  }
+}

@@ -4,16 +4,134 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Menyoo</title>
+  <title>Menyoo :: Seu cardápio nos principais canais da internet.</title>
+  <meta name="description" content="Menyoo é uma plataforma online de cardápios e inteligência de mercado.">
   <link rel="stylesheet" type="text/css" href="./css/styles.css">
+  <script>
+    // Google Analytics
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-112359359-1', 'auto');
+    ga('send', 'pageview');
+
+    //- Mixpanel
+    (function (e, a) { if (!a.__SV) { var b = window; try { var c, l, i, j = b.location, g = j.hash; c = function (a, b) { return (l = a.match(RegExp(b + "=([^&]*)"))) ? l[1] : null }; g && c(g, "state") && (i = JSON.parse(decodeURIComponent(c(g, "state"))), "mpeditor" === i.action && (b.sessionStorage.setItem("_mpcehash", g), history.replaceState(i.desiredHash || "", e.title, j.pathname + j.search))) } catch (m) { } var k, h; window.mixpanel = a; a._i = []; a.init = function (b, c, f) { function e(b, a) { var c = a.split("."); 2 == c.length && (b = b[c[0]], a = c[1]); b[a] = function () { b.push([a].concat(Array.prototype.slice.call(arguments, 0))) } } var d = a; "undefined" !== typeof f ? d = a[f] = [] : f = "mixpanel"; d.people = d.people || []; d.toString = function (b) { var a = "mixpanel"; "mixpanel" !== f && (a += "." + f); b || (a += " (stub)"); return a }; d.people.toString = function () { return d.toString(1) + ".people (stub)" }; k = "disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" "); for (h = 0; h < k.length; h++)e(d, k[h]); a._i.push([b, c, f]) }; a.__SV = 1.2; b = e.createElement("script"); b.type = "text/javascript"; b.async = !0; b.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ? MIXPANEL_CUSTOM_LIB_URL : "file:" === e.location.protocol && "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js"; c = e.getElementsByTagName("script")[0]; c.parentNode.insertBefore(b, c) } })(document, window.mixpanel || []); mixpanel.init("46added2bedaf52657f7643efc2ca9fc");
+    mixpanel.track("PageView");
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Corporation",
+      "name": "Menyoo",
+      "url": "https://menyoo.me/",
+      "logo": "https://menyoo.me/assets/images/logo-menyoo.jpg",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+5511971747758",
+        "contactType": "customer service"
+      },
+      "sameAs": [
+        "https://www.facebook.com/menyoo.me",
+        "https://www.instagram.com/_menyoo",
+        "https://www.twitter.com/_menyoo",
+        "https://www.crunchbase.com/organization/menyoo"
+      ]
+    }
+    </script>
 </head>
 
 <body class="font-sans leading-normal">
-  <div class="container max-w-md mx-auto py-16 px-4">
-    <h1>Quer otimizar o tempo de sua equipe?</h1>
-    <p>Menyoo é uma plataforma online de cardápios e inteligência de mercado.</p>
-    <a href="http://menuqr.com/">Criar conta GRÁTIS</a>
+  <div class="bg-brand-blue-light">
+    <div class="container max-w-2xl mx-auto px-4">
+      <header class="flex items-center py-8 md:mb-16">
+        <div class="w-2/5 logo-menyoo">
+          <img src="./images/logo-menyoo-white.svg" alt="Logo Menyoo" class="h-6 sm:h-8 md:h-12" alt="">
+        </div>
+        <div class="w-3/5 text-right">
+          <nav>
+            <a class="text-sm sm:text-md bg-brand-orange hover:bg-brand-orange-dark text-white font-bold py-2 px-4 rounded no-underline"
+              href="./signup.html">Criar conta</a>
+            <a class="text-sm sm:text-md ml-2 text-white no-underline" href="./login.html">Entrar</a>
+          </nav>
+        </div>
+      </header>
+      <div class="sm:flex">
+        <div class="sm:w-1/2 md:pr-8 md:mt-16  text-center md:text-left">
+          <h1 class="text-white text-3xl md:text-5xl mb-4">Quer aumentar o número de clientes? </h1>
+          <p class="text-white text-lg md:text-2xl mb-8">O Menyoo leva o seu cardápio para os principais canais onde eles te procuram.</p>
+          <a class="bg-brand-orange text-lg hover:bg-brand-orange-dark text-white py-4 px-8 rounded no-underline" href="signup.html">Criar conta GRÁTIS</a>
+        </div>
+        <div class="sm:w-1/2 sm:text-right mt-8 sm:mt-0">
+          <img src="./images/google-pixel-salt-n-bone.png" alt="Smartphone com a imagem de cardápio demo de um estabelecimento">
+        </div>
+      </div>
+    </div>
   </div>
+
+  <div class="container max-w-2xl mx-auto my-8 px-4">
+    <div class="sm:flex sm:justify-between items-center py-8 my-8">
+      <div class="sm:w-1/2 sm:pr-8">
+        <h2 class="text-3xl mb-4 text-brand-blue-lighter">Métricas precisas para alavancar suas vendas</h2>
+        <p class="text-lg text-grey-dark">Com o Menyoo você fica sabendo quantas pessoas te procuram na internet e por onde te procuram.
+          <br> Assim sempre saberá onde agir!</p>
+      </div>
+      <div class="sm:w-1/2 mt-8 sm:mt-0 sm:pl-8">
+        <img class="shadow-lg" src="./images/dashboard-exemple.png" alt="Imagem com exemplo de um dashboard da plataforma Menyoo com os números de acesso do estabelecimento">
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-brand-blue-light py-8">
+    <div class="container max-w-2xl mx-auto my-8 text-center px-4">
+      <div class="md:w-2/3 mx-auto mb-8">
+        <h2 class="text-white text-4xl mb-4">Benefícios exclusivos</h2>
+        <p class="text-white text-lg">Controle o cardápio em tempo real, faça promoções e organize o conteúdo como desejar.</p>
+        <p class="text-white text-lg">Tenha o seu estabelecimento adequado a leis de acessibilidade no cardápio.</p>
+      </div>
+      <div class="md:w-2/3 mx-auto">
+        <img src="./images/dashboards.png" alt="Duas imagens com diferentes dashboards da plataforma Menyoo com dados do estabelecimento.">
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-grey-lighter py-16">
+    <div class="container max-w-2xl mx-auto px-4">
+      <div class="sm:flex sm:items-center sm:justify-between">
+        <div class="sm:w-1/2 md:w-1/4">
+          <img src="./images/logo-menyoo.svg" height="48" alt="Logo Menyoo">
+          <p class="text-grey-dark">Menyoo é uma plataforma online de cardápios e inteligência de mercado.</p>
+        </div>
+        <div class="sm:w-1/2 md:w-1/5 sm:text-center mt-8 sm:mt-0">
+          <a class="bg-brand-blue-lighter text-md hover:bg-brand-blue text-white py-4 px-8 rounded no-underline" href="signup.html">Criar conta GRÁTIS</a>
+          <p class="text-grey-dark mt-4">ou
+            <a href="./login.html" class="text-brand-blue no-underline">acesse sua conta</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="sm:flex border-grey-light border-t-2 mt-8 pt-4">
+        <div class="sm:w-1/2">
+          <p class="text-grey-dark text-sm">Copyright © 2014 - 2018
+            <br> MENUQR SOLUÇÕES WEB - São Paulo / Brasil</p>
+        </div>
+        <div class="sm:w-1/2 sm:text-right mt-4 sm:mt-0">
+          <a class="no-underline sm:ml-4" href="https://www.facebook.com/menyoo.me">
+            <img src="./images/facebook.svg" alt="Facebook">
+          </a>
+          <a class="no-underline ml-4" href="https://twitter.com/_menyoo">
+            <img src="./images/twitter.svg" alt="Twitter">
+          </a>
+          <a class="no-underline ml-4" href="https://www.instagram.com/_menyoo/">
+            <img src="./images/instagram.svg" alt="Instagram">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
