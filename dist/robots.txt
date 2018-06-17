@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://menyoo.me/sitemap.xml
