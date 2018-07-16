@@ -58,3 +58,6 @@ gulp.task('minify-css', () => {
 
 // default task
 gulp.task("default", ["serve"]);
+
+// Build Task
+gulp.task('build', ['css', 'minify-css']);
