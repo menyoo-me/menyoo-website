@@ -323,7 +323,7 @@ img {
   * Here you would import any custom component classes; stuff that you'd
   * want loaded *before* the utilities so that the utilities can still
   * override them.
-  * 
+  *
   * @import "my-components/foo";
   * @import "my-components/bar";
   */
@@ -358,6 +358,14 @@ img {
   .container {
     max-width: 1200px;
   }
+}
+
+.bg-grey-lighter {
+  background-color: #adabab;
+}
+
+.bg-grey-light {
+  background-color: #6f6d6d;
 }
 
 .bg-white {
@@ -396,12 +404,24 @@ img {
   border-top-width: 2px;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 .flex {
   display: flex;
 }
 
 .items-center {
   align-items: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .font-sans {
@@ -422,6 +442,10 @@ img {
 
 .leading-normal {
   line-height: 1.5;
+}
+
+.m-2 {
+  margin: 0.5rem;
 }
 
 .my-8 {
@@ -518,6 +542,10 @@ img {
 
 .text-grey-dark {
   color: #2c2929;
+}
+
+.text-grey-darker {
+  color: #1d1c1c;
 }
 
 .text-white {
@@ -622,10 +650,6 @@ img {
     text-align: left;
   }
 
-  .sm\:text-center {
-    text-align: center;
-  }
-
   .sm\:text-right {
     text-align: right;
   }
@@ -672,13 +696,5 @@ img {
 
   .md\:w-2\/3 {
     width: 66.66667%;
-  }
-
-  .md\:w-1\/4 {
-    width: 25%;
-  }
-
-  .md\:w-1\/5 {
-    width: 20%;
   }
 }
